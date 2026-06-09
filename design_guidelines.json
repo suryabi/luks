@@ -1,0 +1,147 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 5 (Luxury) + Archetype 4 (Swiss Tech)",
+  "colors": {
+    "background": "#150708",
+    "surface": "#1F0B0E",
+    "surface_glass": "rgba(21, 7, 8, 0.7)",
+    "primary": "#EF4444",
+    "primary_gradient": "linear-gradient(to right, #EF4444, #F97316)",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A38F91",
+    "border": "rgba(239, 68, 68, 0.15)",
+    "accent_orange": "#F97316"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "'Outfit', sans-serif",
+      "body": "'Manrope', sans-serif"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-bold",
+      "h2": "text-3xl sm:text-4xl tracking-tight font-semibold",
+      "h3": "text-xl sm:text-2xl font-medium",
+      "body": "text-base leading-relaxed text-[#A38F91]",
+      "overline": "text-xs tracking-[0.2em] uppercase text-[#EF4444] font-semibold"
+    }
+  },
+  "layout_and_spacing": {
+    "section_padding": "py-24 sm:py-32 px-6 sm:px-12 lg:px-24",
+    "container": "max-w-7xl mx-auto",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8",
+    "grid_dense": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
+  },
+  "components": {
+    "marketing_strategy": "Hybrid Rule: Pure HTML+Tailwind for complex overlapping layouts, heavily customized Shadcn for interactives (Forms, Carousel).",
+    "shadcn_components_to_install": [
+      "button",
+      "input",
+      "textarea",
+      "accordion",
+      "carousel",
+      "form"
+    ],
+    "third_party_libraries_to_install": [
+      "framer-motion",
+      "lucide-react",
+      "react-icons",
+      "react-fast-marquee",
+      "@fontsource/outfit",
+      "@fontsource/manrope"
+    ]
+  },
+  "media": {
+    "image_urls": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1624533358643-7336036c9482?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwYWJzdHJhY3QlMjByZWR8ZW58MHx8fHwxNzgxMDA5MTI1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Red digital abstract light, used for hero section background with overlay."
+      },
+      "services_portfolio_abstract_1": {
+        "url": "https://images.pexels.com/photos/12627677/pexels-photo-12627677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Futuristic red geometric 3D shape, used for product dev or portfolio grid."
+      },
+      "services_portfolio_abstract_2": {
+        "url": "https://images.unsplash.com/photo-1605362001336-f91645086f32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHw0fHxkYXJrJTIwcmVkJTIwYWJzdHJhY3QlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4MTAwOTEyNXww&ixlib=rb-4.1.0&q=85",
+        "description": "Red and black round overlapping elements, ideal for case studies."
+      },
+      "team_about": {
+        "url": "https://images.unsplash.com/photo-1599837565318-67429bde7162?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjB0ZWNoJTIwdGVhbSUyMGRhcmt8ZW58MHx8fHwxNzgxMDA5MTE0fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Dark tech environment/screen, used for team/about section background or visual."
+      },
+      "industries_abstract": {
+        "url": "https://images.pexels.com/photos/18618814/pexels-photo-18618814.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Red LED geometric lines, used for Industries section backgrounds."
+      }
+    }
+  },
+  "design_rules": [
+    "Use Optical Glassmorphism for header: bg-[#150708]/70 backdrop-blur-xl border-b border-red-500/10.",
+    "Hero text MUST use bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500 on the words 'Expert IT Consulting'.",
+    "Never use pure black (#000000); always use #150708 (dark maroon tint).",
+    "All interactive elements MUST have data-testid attributes.",
+    "Do NOT use generic Shadcn Card component everywhere. Use Grid Borders (border-r border-b border-red-500/10) for services.",
+    "Marquee for tech stack MUST use 'react-icons/si' (e.g., SiSap, SiAws, SiReact, SiDocker, SiOracle) with muted coloring and hover:text-red-500.",
+    "Images MUST have max-h-[80vh] md:max-h-none on mobile.",
+    "Buttons: Use flat design with sharp or slight rounded corners (rounded-sm). Primary button bg-red-500 hover:bg-orange-500 text-white.",
+    "Forms: Use Shadcn form components customized with #1F0B0E backgrounds and red rings on focus.",
+    "Hero image overlay MUST NOT exceed bg-[#150708]/60 to keep the image visible.",
+    "Section Headings MUST be left-aligned for clear hierarchy, except in explicitly centered sections like Testimonials."
+  ],
+  "pages_and_sections": [
+    {
+      "name": "Header",
+      "description": "Sticky top nav with Logo (text or abstract mark), Links, and a Contact CTA. Glassmorphism effect.",
+      "test_ids": ["header-nav", "nav-link-services", "nav-link-work", "nav-cta-contact"]
+    },
+    {
+      "name": "Hero",
+      "description": "Bold headline with red->orange gradient text. Dual CTA (Explore Services [Primary], Learn More [Outline]). Background image with heavy overlay.",
+      "test_ids": ["hero-section", "hero-cta-explore", "hero-cta-learn"]
+    },
+    {
+      "name": "Tech Stack Marquee",
+      "description": "Continuous scrolling row of technology logos (SAP, AWS, React, etc.) using react-fast-marquee and react-icons.",
+      "test_ids": ["tech-stack-marquee"]
+    },
+    {
+      "name": "Services",
+      "description": "Grid borders layout covering: IT Consulting, Software Development, Product Development, Cloud & DevOps, Data & Analytics, SAP HCM/HANA.",
+      "test_ids": ["services-section", "service-item-1", "service-item-2"]
+    },
+    {
+      "name": "Industries",
+      "description": "Showcasing Finance, Healthcare, Retail, etc., utilizing the red LED geometric image.",
+      "test_ids": ["industries-section", "industry-card"]
+    },
+    {
+      "name": "Process",
+      "description": "Discover -> Design -> Build -> Deploy -> Support timeline with vertical or horizontal lines.",
+      "test_ids": ["process-section", "process-step"]
+    },
+    {
+      "name": "Case Studies / Portfolio",
+      "description": "Bento grid mode A. Using the abstract geometric 3D images to make it look premium and tech-focused.",
+      "test_ids": ["portfolio-section", "portfolio-item"]
+    },
+    {
+      "name": "Team & About",
+      "description": "Dark atmospheric section with the team/about image. Text overlapping or side-by-side.",
+      "test_ids": ["team-about-section"]
+    },
+    {
+      "name": "Testimonials",
+      "description": "Carousel using Shadcn UI.",
+      "test_ids": ["testimonials-section", "testimonial-carousel", "testimonial-next-btn", "testimonial-prev-btn"]
+    },
+    {
+      "name": "Contact / CTA",
+      "description": "Static visual form with dark maroon background, red outline inputs.",
+      "test_ids": ["contact-section", "contact-form", "contact-submit"]
+    },
+    {
+      "name": "Footer",
+      "description": "Dark footer section with site map, social links, and a large text-based logo representation.",
+      "test_ids": ["footer", "footer-link"]
+    }
+  ]
+}
