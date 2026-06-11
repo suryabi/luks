@@ -2,10 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight, ArrowUpRight, Sparkles, Eye, Network, ShieldCheck,
-  Zap, BarChart3, ChevronRight,
+  Zap, BarChart3, ChevronRight, Plug, FolderArchive, Mail, Map, Calculator,
   Briefcase, Megaphone, Factory, Truck, Wallet, LineChart, Users, Cog,
   CheckCircle2, Layers, Globe2,
 } from "lucide-react";
+import {
+  SiZoho, SiSlack, SiGoogledrive, SiDropbox, SiGooglemaps, SiGmail,
+  SiQuickbooks, SiXero,
+} from "react-icons/si";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
@@ -82,13 +86,13 @@ const MODULES = [
         ],
       },
       {
-        title: "Customer & Account Management",
+        title: "Accounts & Customer 360°",
         items: [
-          "360° account view",
-          "Contact management",
+          "360° account view (Accounts / Customers / Contacts)",
+          "Contact management & relationship history",
           "Business card scanning",
           "GPS-enabled customer locations",
-          "Customer interaction history",
+          "Customer interaction & touchpoint history",
         ],
       },
       {
@@ -306,7 +310,15 @@ const MODULES = [
       },
       {
         title: "Integrations",
-        items: ["Accounting Systems", "Google Maps", "Slack", "Email Platforms", "Cloud Storage", "ERP & 3rd-party APIs"],
+        items: [
+          "Zoho (Books, CRM, Inventory)",
+          "Slack — alerts, approvals & team channels",
+          "Document Storage — Google Drive, Dropbox, OneDrive, S3",
+          "Accounting Systems (Tally, QuickBooks, Xero, Zoho Books)",
+          "Google Maps & geo-services",
+          "Email Platforms (Gmail, Outlook, SMTP)",
+          "ERP & 3rd-party REST APIs",
+        ],
       },
     ],
   },
@@ -630,6 +642,137 @@ const Modules = () => {
   );
 };
 
+const Integrations = () => {
+  const FEATURED = [
+    {
+      Icon: SiZoho,
+      name: "Zoho",
+      desc: "Two-way sync with Zoho Books, Zoho CRM and Zoho Inventory.",
+      tags: ["Books", "CRM", "Inventory"],
+    },
+    {
+      Icon: SiSlack,
+      name: "Slack",
+      desc: "Real-time alerts, approval requests and team channels for every workflow.",
+      tags: ["Alerts", "Approvals"],
+    },
+    {
+      Icon: FolderArchive,
+      name: "Document Storage",
+      desc: "Attach files, contracts and POs from Drive, Dropbox, OneDrive or S3.",
+      tags: ["Drive", "Dropbox", "S3"],
+      stack: [SiGoogledrive, SiDropbox],
+    },
+  ];
+
+  const OTHERS = [
+    { Icon: SiQuickbooks, name: "QuickBooks" },
+    { Icon: SiXero, name: "Xero" },
+    { Icon: Calculator, name: "Tally" },
+    { Icon: SiGooglemaps, name: "Google Maps" },
+    { Icon: SiGmail, name: "Gmail / SMTP" },
+    { Icon: Mail, name: "Outlook" },
+    { Icon: Map, name: "Geo Services" },
+    { Icon: Plug, name: "REST APIs" },
+  ];
+
+  return (
+    <section
+      id="integrations"
+      data-testid="integrations-section"
+      className="relative py-24 sm:py-32 px-6 sm:px-10 lg:px-12 border-t border-red-500/10"
+    >
+      <div className="max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-12 gap-8 mb-14">
+          <div className="lg:col-span-6">
+            <SectionEyebrow>Integrations</SectionEyebrow>
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tighter leading-[1.05]">
+              Plays well with the <span className="gradient-text">tools you already use</span>.
+            </h2>
+          </div>
+          <div className="lg:col-span-5 lg:col-start-8 flex items-end">
+            <p className="text-lg text-[#C9B7B9] leading-relaxed">
+              Operations Cloud is API-first. Native connectors for Zoho, Slack
+              and major document-storage providers — plus REST endpoints for
+              anything else in your stack.
+            </p>
+          </div>
+        </div>
+
+        {/* Featured integrations */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {FEATURED.map((f) => (
+            <div
+              key={f.name}
+              data-testid={`integration-featured-${f.name.toLowerCase().replace(/\s+/g, '-')}`}
+              className="group relative p-7 rounded-2xl border border-red-500/15 bg-[#1F0B0E]/70 hover:border-red-500/40 hover:bg-[#1F0B0E] transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-red-500/30 to-orange-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10">
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-[#150708] border border-red-500/20 flex items-center justify-center">
+                    <f.Icon className="w-6 h-6 text-white" />
+                  </div>
+                  {f.stack && (
+                    <div className="flex -space-x-1.5">
+                      {f.stack.map((S, i) => (
+                        <div
+                          key={i}
+                          className="w-7 h-7 rounded-full bg-[#150708] border border-red-500/25 flex items-center justify-center"
+                        >
+                          <S className="w-3.5 h-3.5 text-[#C9B7B9]" />
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <h3 className="font-display text-2xl text-white tracking-tight">
+                  {f.name}
+                </h3>
+                <p className="text-[15px] text-[#A38F91] leading-relaxed mt-3">
+                  {f.desc}
+                </p>
+                <div className="flex flex-wrap gap-2 mt-5">
+                  {f.tags.map((t) => (
+                    <span
+                      key={t}
+                      className="text-[11px] tracking-wider uppercase text-[#C9B7B9] px-2.5 py-1 rounded-full border border-red-500/15 bg-[#150708]"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Others */}
+        <div className="mt-10 p-6 sm:p-8 rounded-2xl border border-red-500/12 bg-[#1F0B0E]/50">
+          <div className="flex items-center justify-between mb-5">
+            <div className="text-xs tracking-[0.25em] uppercase text-[#A38F91] font-semibold">
+              Plus connectors for
+            </div>
+            <Plug className="w-4 h-4 text-red-400" />
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
+            {OTHERS.map((o) => (
+              <div
+                key={o.name}
+                data-testid={`integration-other-${o.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
+                className="flex flex-col items-center justify-center gap-2 py-4 px-2 rounded-xl border border-red-500/8 bg-[#150708] hover:border-red-500/30 transition-colors"
+              >
+                <o.Icon className="w-6 h-6 text-[#C9B7B9]" />
+                <div className="text-[11px] text-[#A38F91] text-center">{o.name}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const BuiltToScale = () => (
   <section
     data-testid="built-to-scale"
@@ -737,6 +880,7 @@ export default function OperationsCloud() {
         <WhyChoose />
         <LifecycleStrip />
         <Modules />
+        <Integrations />
         <BuiltToScale />
         <ClosingCTA />
       </main>
