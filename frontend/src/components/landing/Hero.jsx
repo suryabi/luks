@@ -53,7 +53,7 @@ export const Hero = () => {
           </h1>
 
           <p className="max-w-2xl text-lg sm:text-xl text-[#C9B7B9] leading-relaxed">
-            Luks Solutions Ltd delivers strategic technology consulting, custom
+            Luks Solutions delivers strategic technology consulting, custom
             software services, and end‑to‑end product development for
             forward‑thinking enterprises across the globe.
           </p>

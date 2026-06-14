@@ -63,7 +63,7 @@ export const Header = () => {
           </div>
           <div className="flex flex-col leading-none">
             <span className="font-display font-semibold text-white tracking-tight">LUKS</span>
-            <span className="text-[10px] tracking-[0.25em] text-[#A38F91] uppercase">Solutions Ltd</span>
+            <span className="text-[10px] tracking-[0.25em] text-[#A38F91] uppercase">Solutions</span>
           </div>
         </Link>
 

@@ -55,7 +55,7 @@ export const Footer = () => {
                   LUKS
                 </span>
                 <span className="text-[10px] tracking-[0.3em] text-[#A38F91] uppercase">
-                  Solutions Ltd
+                  Solutions
                 </span>
               </div>
             </a>
@@ -114,7 +114,7 @@ export const Footer = () => {
 
         {/* Legal */}
         <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-[#A38F91]">
-          <div>© {new Date().getFullYear()} Luks Solutions Ltd. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Luks Solutions. All rights reserved.</div>
           <div className="flex items-center gap-6">
             <a href="#" data-testid="footer-link" className="hover:text-white transition-colors">
               Privacy
