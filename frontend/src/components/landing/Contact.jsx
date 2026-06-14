@@ -42,12 +42,12 @@ export const Contact = () => {
 
           <div className="space-y-5 mt-10">
             {[
-              { Icon: Mail, k: "Email", v: "hello@lukssolutions.com" },
-              { Icon: Phone, k: "Phone", v: "+1 (415) 555 — 0142" },
+              { Icon: Mail, k: "Email", v: "info@lukssolutions.com" },
+              { Icon: Phone, k: "Phone", v: "+91 78930 12366" },
               {
                 Icon: MapPin,
                 k: "Headquarters",
-                v: "London · Bengaluru · New York",
+                v: "Hyderabad · London · New York",
               },
             ].map((r) => (
               <div key={r.k} className="flex items-start gap-4">
