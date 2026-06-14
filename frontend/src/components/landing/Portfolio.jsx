@@ -10,26 +10,26 @@ const IMG_3 =
 
 const CASES = [
   {
-    tag: "Banking · Core Modernization",
-    title: "Reimagined a core lending platform for a Tier‑1 bank",
+    tag: "Retail · SuccessFactors Full Suite",
+    title: "SAP SuccessFactors HCM transformation at Marks & Spencer UK",
     metrics: [
-      { k: "Faster originations", v: "3.4×" },
-      { k: "Infra cost reduction", v: "−38%" },
+      { k: "Modules delivered", v: "8" },
+      { k: "Geographies", v: "UK + EU" },
     ],
     img: IMG_2,
     span: "lg:col-span-7 lg:row-span-2",
   },
   {
-    tag: "SaaS · Product Engineering",
-    title: "MVP → Series B for a vertical SaaS in 14 months",
-    metrics: [{ k: "Customers", v: "120+" }],
+    tag: "Strategic Partnership · Global SI",
+    title: "Long-running Zalaris partnership across SF EC, PMGM, Comp, Onb & Rec",
+    metrics: [{ k: "Active consultants", v: "27+" }],
     img: IMG_1,
     span: "lg:col-span-5",
   },
   {
-    tag: "Manufacturing · SAP HCM",
-    title: "SAP HCM rollout across 9 markets",
-    metrics: [{ k: "On time", v: "100%" }],
+    tag: "Multi-client · SF Rollouts",
+    title: "SuccessFactors implementations for LR, L+G, NGN & DNB",
+    metrics: [{ k: "Programmes delivered", v: "4" }],
     img: IMG_3,
     span: "lg:col-span-5",
   },

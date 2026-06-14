@@ -3,19 +3,19 @@ import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const ITEMS = [
   {
-    q: "Luks Solutions didn't just deliver software — they raised the bar for how our internal teams ship. The level of senior ownership is rare.",
-    name: "Anika Mehta",
-    role: "VP Engineering, Tier‑1 Fintech",
+    q: "Luks Solutions has been our reliable offshore partner for SuccessFactors delivery — disciplined, certification-driven and unfailingly transparent on governance.",
+    name: "Project Director",
+    role: "Global SuccessFactors SI Partner",
   },
   {
-    q: "Their SAP HCM team navigated a 9‑country rollout with zero missed milestones. Predictable, transparent, calm under pressure.",
-    name: "Daniel Okafor",
-    role: "Group CIO, Global Manufacturer",
+    q: "Their Business Use Case methodology turned ambiguous HR requirements into clean configuration workbooks. Programme tracking has never been this calm.",
+    name: "HCM Transformation Lead",
+    role: "FTSE 100 Retailer",
   },
   {
-    q: "We engaged Luks to take a product from zero to revenue. Fourteen months later we closed our Series B — and they still feel like part of the team.",
-    name: "Sofia Lindqvist",
-    role: "Co‑founder & CTO, Vertical SaaS",
+    q: "From SF Employee Central to RMK, Comp and CPI integrations — one team, one accountable PM, and consultants who genuinely know the product.",
+    name: "VP Human Capital Systems",
+    role: "European Financial Services Group",
   },
 ];
 

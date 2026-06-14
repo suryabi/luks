@@ -4,8 +4,9 @@ import { Menu, X, ArrowUpRight, ChevronDown, Cloud } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "Services", href: "/#services", testid: "nav-link-services" },
-  { label: "Industries", href: "/#industries", testid: "nav-link-industries" },
+  { label: "Modules", href: "/#industries", testid: "nav-link-industries" },
   { label: "Process", href: "/#process", testid: "nav-link-process" },
+  { label: "Engagement", href: "/#engagement", testid: "nav-link-engagement" },
   { label: "Work", href: "/#portfolio", testid: "nav-link-work" },
   { label: "About", href: "/#about", testid: "nav-link-about" },
 ];
