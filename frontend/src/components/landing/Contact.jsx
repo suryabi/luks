@@ -42,12 +42,12 @@ export const Contact = () => {
 
           <div className="space-y-5 mt-10">
             {[
-              { Icon: Mail, k: "Email", v: "hello@lukssolutions.com" },
-              { Icon: Phone, k: "Phone", v: "+1 (415) 555 — 0142" },
+              { Icon: Mail, k: "Email", v: "info@lukssolutions.com" },
+              { Icon: Phone, k: "Phone", v: "+91 78930 12366" },
               {
                 Icon: MapPin,
                 k: "Headquarters",
-                v: "London · Bengaluru · New York",
+                v: "Hyderabad · London · New York",
               },
             ].map((r) => (
               <div key={r.k} className="flex items-start gap-4">
@@ -110,12 +110,12 @@ export const Contact = () => {
                   className="bg-[#150708] border border-red-500/15 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-red-500/60 focus:ring-1 focus:ring-red-500/40"
                 >
                   {[
-                    "IT Consulting",
-                    "Software Services",
-                    "Product Development",
-                    "Cloud & DevOps",
-                    "Data & Analytics",
-                    "SAP HCM / HANA",
+                    "SAP SuccessFactors Implementation",
+                    "Configuration Services",
+                    "Integration & Testing (CPI / Boomi)",
+                    "Functional Workshops",
+                    "Operations Cloud (Product)",
+                    "Support & AMS",
                   ].map((o) => (
                     <option key={o} value={o} className="bg-[#150708]">
                       {o}

@@ -2,13 +2,19 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import {
   SiReact, SiNodedotjs, SiPython, SiDocker, SiKubernetes,
-  SiPostgresql, SiMongodb, SiTypescript, SiSap, SiGooglecloud,
-  SiTerraform, SiGo, SiFlutter, SiNextdotjs,
+  SiPostgresql, SiTypescript, SiSap, SiGooglecloud,
+  SiTerraform, SiNextdotjs,
 } from "react-icons/si";
-import { FaAws, FaDatabase } from "react-icons/fa";
+import { FaAws, FaDatabase, FaUsers, FaCogs, FaPlug, FaChartBar, FaUserPlus, FaGraduationCap } from "react-icons/fa";
 
 const ITEMS = [
   { Icon: SiSap, label: "SAP" },
+  { Icon: FaUsers, label: "SuccessFactors EC" },
+  { Icon: FaUserPlus, label: "SF Recruiting / RMK" },
+  { Icon: FaGraduationCap, label: "SF Learning" },
+  { Icon: FaChartBar, label: "SAP Analytics Cloud" },
+  { Icon: FaCogs, label: "SAP CPI / HCI" },
+  { Icon: FaPlug, label: "Dell Boomi" },
   { Icon: FaAws, label: "AWS" },
   { Icon: SiGooglecloud, label: "GCP" },
   { Icon: SiReact, label: "React" },
@@ -16,14 +22,11 @@ const ITEMS = [
   { Icon: SiTypescript, label: "TypeScript" },
   { Icon: SiNodedotjs, label: "Node.js" },
   { Icon: SiPython, label: "Python" },
-  { Icon: SiGo, label: "Go" },
-  { Icon: SiFlutter, label: "Flutter" },
   { Icon: SiDocker, label: "Docker" },
   { Icon: SiKubernetes, label: "Kubernetes" },
   { Icon: SiTerraform, label: "Terraform" },
   { Icon: SiPostgresql, label: "Postgres" },
-  { Icon: SiMongodb, label: "MongoDB" },
-  { Icon: FaDatabase, label: "Oracle" },
+  { Icon: FaDatabase, label: "HANA" },
 ];
 
 export const TechMarquee = () => {

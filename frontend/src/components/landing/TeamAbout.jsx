@@ -5,10 +5,10 @@ const TEAM_IMG =
   "https://images.unsplash.com/photo-1599837565318-67429bde7162?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjB0ZWNoJTIwdGVhbSUyMGRhcmt8ZW58MHx8fHwxNzgxMDA5MTE0fDA&ixlib=rb-4.1.0&q=85";
 
 const FACTS = [
-  { Icon: Users, k: "150+", l: "Engineers & Consultants" },
-  { Icon: Globe2, k: "12", l: "Countries Delivered In" },
-  { Icon: Workflow, k: "20+", l: "Active Engagements" },
-  { Icon: Award, k: "ISO 27001", l: "Certified Practices" },
+  { Icon: Users, k: "27+", l: "Certified Consultants" },
+  { Icon: Globe2, k: "UK · EU · IN", l: "Cross-border delivery" },
+  { Icon: Workflow, k: "10", l: "SuccessFactors Modules" },
+  { Icon: Award, k: "20 yrs", l: "Leadership Experience" },
 ];
 
 export const TeamAbout = () => {
@@ -33,7 +33,7 @@ export const TeamAbout = () => {
                 <div className="text-xs tracking-[0.25em] uppercase text-red-300 font-semibold">
                   Established
                 </div>
-                <div className="font-display text-3xl text-white mt-1">2013</div>
+                <div className="font-display text-3xl text-white mt-1">2016</div>
               </div>
               <div className="flex -space-x-2">
                 {["#EF4444", "#F97316", "#fbbf24", "#a78bfa"].map((c, i) => (
@@ -58,15 +58,18 @@ export const TeamAbout = () => {
           </h2>
           <div className="space-y-5 mt-7 text-[#C9B7B9] text-lg leading-relaxed">
             <p>
-              We are a global consulting and product engineering firm built on
-              a simple idea: senior people, accountable to outcomes. Founded in
-              2013, we partner with ambitious organisations across finance,
-              healthcare, retail and SaaS.
+              Luks Solutions is an India-based professional consultancy
+              providing solution implementation services to global SIs and
+              enterprise clients. Founded in 2016, we have established
+              ourselves as a trusted SAP, SuccessFactors and HCM Cloud
+              delivery partner.
             </p>
             <p>
-              From SAP HCM specialisation to modern cloud product engineering,
-              our practice areas reinforce each other — letting us solve hard
-              problems end‑to‑end without handoffs that break momentum.
+              Led by <span className="text-white font-semibold">Srirama Raju G,
+              Managing Partner</span> with 20 years across SAP HCM,
+              SuccessFactors, SAP HANA and BW/BI — backed by 27+ certified
+              consultants spanning Employee Central, PMGM, Compensation,
+              Onboarding, Recruiting, RMK, CPI &amp; Dell Boomi.
             </p>
           </div>
 

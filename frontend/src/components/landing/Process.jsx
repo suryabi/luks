@@ -1,36 +1,38 @@
 import React from "react";
-import { Search, PenTool, Hammer, Rocket, LifeBuoy } from "lucide-react";
+import {
+  ClipboardList, FileCog, Layers, ShieldCheck, RefreshCw,
+} from "lucide-react";
 
 const STEPS = [
   {
     n: "01",
-    Icon: Search,
-    title: "Discover",
-    desc: "Stakeholder workshops, technical audits and a clear point‑of‑view on what to build, change or retire.",
+    Icon: ClipboardList,
+    title: "Business Use Cases",
+    desc: "We start from real business outcomes — capturing requirements as Business Use Cases that anchor every technical decision downstream.",
   },
   {
     n: "02",
-    Icon: PenTool,
-    title: "Design",
-    desc: "System architecture, UX flows and delivery roadmap — costed, risk‑profiled and committed to.",
+    Icon: FileCog,
+    title: "Configuration Workbooks",
+    desc: "Use cases translate into structured configuration workbooks — the contract between business stakeholders and our consultants.",
   },
   {
     n: "03",
-    Icon: Hammer,
-    title: "Build",
-    desc: "Cross‑functional squads ship in bi‑weekly sprints with transparent demos, metrics and accountability.",
+    Icon: Layers,
+    title: "Build & Integrate",
+    desc: "Certified consultants configure SuccessFactors modules from workbooks and connect them via CPI / Dell Boomi to your wider stack.",
   },
   {
     n: "04",
-    Icon: Rocket,
-    title: "Deploy",
-    desc: "Zero‑downtime releases, performance SLOs, observability and a launch plan your operations team owns.",
+    Icon: ShieldCheck,
+    title: "Governance & Assurance",
+    desc: "Governance models keep the onsite team, client stakeholders and our offshore pod aligned — with configuration assurance against requirements.",
   },
   {
     n: "05",
-    Icon: LifeBuoy,
-    title: "Support",
-    desc: "AMS, SRE and continuous improvement — we stay accountable for the systems we build.",
+    Icon: RefreshCw,
+    title: "Test, Release & Support",
+    desc: "End-to-end functional testing, controlled releases and ongoing support — including break-fix and continuous improvement.",
   },
 ];
 
@@ -45,17 +47,18 @@ export const Process = () => {
         <div className="grid lg:grid-cols-12 gap-8 mb-16">
           <div className="lg:col-span-5">
             <div className="text-xs tracking-[0.25em] uppercase text-red-500 font-semibold">
-              How we work
+              Our Delivery Mantra
             </div>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tighter leading-[1.05]">
-              A pragmatic <span className="gradient-text">delivery process</span>.
+              Use case driven. <span className="gradient-text">Quality assured</span>.
             </h2>
           </div>
           <div className="lg:col-span-6 lg:col-start-7 flex items-end">
             <p className="text-lg text-[#C9B7B9] leading-relaxed">
-              Built around five disciplined phases — designed to de‑risk
-              ambition, surface trade‑offs early, and ship outcomes that
-              compound over time.
+              Skilled resources alone don&apos;t guarantee successful delivery.
+              Our Business Use Case methodology, governance models and
+              relentless certification programme together create predictable,
+              auditable, on-budget outcomes.
             </p>
           </div>
         </div>

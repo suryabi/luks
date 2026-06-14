@@ -5,11 +5,11 @@ const COLUMNS = [
   {
     title: "Services",
     links: [
-      { l: "IT Consulting", h: "#services", t: "footer-link" },
-      { l: "Software Services", h: "#services", t: "footer-link" },
-      { l: "Product Development", h: "#services", t: "footer-link" },
-      { l: "Cloud & DevOps", h: "#services", t: "footer-link" },
-      { l: "SAP HCM / HANA", h: "#services", t: "footer-link" },
+      { l: "Configuration Services", h: "#services", t: "footer-link" },
+      { l: "Integration & Testing", h: "#services", t: "footer-link" },
+      { l: "Functional Services", h: "#services", t: "footer-link" },
+      { l: "Operations Cloud", h: "/products/operations-cloud", t: "footer-link" },
+      { l: "Support & AMS", h: "#services", t: "footer-link" },
     ],
   },
   {
@@ -17,8 +17,8 @@ const COLUMNS = [
     links: [
       { l: "About", h: "#about", t: "footer-link" },
       { l: "Work", h: "#portfolio", t: "footer-link" },
-      { l: "Industries", h: "#industries", t: "footer-link" },
-      { l: "Process", h: "#process", t: "footer-link" },
+      { l: "SF Product Range", h: "#industries", t: "footer-link" },
+      { l: "Engagement Models", h: "#engagement", t: "footer-link" },
       { l: "Contact", h: "#contact", t: "footer-link" },
     ],
   },
@@ -55,7 +55,7 @@ export const Footer = () => {
                   LUKS
                 </span>
                 <span className="text-[10px] tracking-[0.3em] text-[#A38F91] uppercase">
-                  Solutions Ltd
+                  Solutions
                 </span>
               </div>
             </a>
@@ -114,7 +114,7 @@ export const Footer = () => {
 
         {/* Legal */}
         <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-[#A38F91]">
-          <div>© {new Date().getFullYear()} Luks Solutions Ltd. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Luks Solutions. All rights reserved.</div>
           <div className="flex items-center gap-6">
             <a href="#" data-testid="footer-link" className="hover:text-white transition-colors">
               Privacy

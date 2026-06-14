@@ -869,7 +869,7 @@ export default function OperationsCloud() {
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title =
-      "Sales & Operations Cloud — Luks Solutions Ltd";
+      "Sales & Operations Cloud — Luks Solutions";
   }, []);
 
   return (

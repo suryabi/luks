@@ -37,7 +37,7 @@ export const Hero = () => {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-red-500/30 bg-red-500/10 backdrop-blur-sm w-fit">
             <Sparkles className="w-3.5 h-3.5 text-orange-400" />
             <span className="text-xs tracking-[0.2em] uppercase text-[#F8C5C7] font-semibold">
-              IT Consulting · Software · Product Engineering
+              SAP · SuccessFactors · HCM Cloud · Software Services
             </span>
           </div>
 
@@ -45,17 +45,18 @@ export const Hero = () => {
             data-testid="hero-headline"
             className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tighter leading-[0.95] text-white"
           >
-            Build the future <br className="hidden sm:block" />
-            with{" "}
+            Delivering <br className="hidden sm:block" />
             <span className="gradient-text inline-block">
-              Expert IT Consulting
-            </span>
+              SAP SuccessFactors
+            </span>{" "}
+            with Assurance.
           </h1>
 
           <p className="max-w-2xl text-lg sm:text-xl text-[#C9B7B9] leading-relaxed">
-            Luks Solutions Ltd delivers strategic technology consulting, custom
-            software services, and end‑to‑end product development for
-            forward‑thinking enterprises across the globe.
+            Luks Solutions is an India‑based consultancy partnering with global
+            implementation firms to deliver SAP, SuccessFactors and HCM Cloud
+            programmes — backed by a Business Use Case driven methodology and
+            our own Operations Cloud product.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -80,10 +81,10 @@ export const Hero = () => {
           {/* Stats strip */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-6 pt-10 mt-2 border-t border-red-500/10">
             {[
-              { n: "12+", l: "Years of Expertise" },
-              { n: "180+", l: "Projects Delivered" },
-              { n: "40+", l: "Global Clients" },
-              { n: "98%", l: "Retention Rate" },
+              { n: "27+", l: "Certified Consultants" },
+              { n: "10", l: "SuccessFactors Modules" },
+              { n: "8+", l: "Global Engagements" },
+              { n: "20yrs", l: "Leadership Experience" },
             ].map((s) => (
               <div key={s.l} data-testid={`hero-stat-${s.l.split(' ')[0].toLowerCase()}`}>
                 <div className="font-display text-3xl sm:text-4xl font-bold text-white">
@@ -103,17 +104,17 @@ export const Hero = () => {
               <div className="relative z-10 flex flex-col h-full justify-between">
                 <div>
                   <div className="text-xs tracking-[0.25em] uppercase text-red-400 font-semibold">
-                    Engagement
+                    Engagement Models
                   </div>
                   <div className="mt-3 font-display text-2xl text-white leading-tight">
-                    Strategy · Build · Scale
+                    Configure · Integrate · Support
                   </div>
                 </div>
                 <div className="space-y-3">
                   {[
-                    { k: "Discovery", v: "Week 1" },
-                    { k: "MVP", v: "Week 4" },
-                    { k: "Launch", v: "Week 12" },
+                    { k: "Fixed Price", v: "Scoped" },
+                    { k: "Time & Materials", v: "Flexible" },
+                    { k: "Dedicated Pod", v: "Monthly" },
                   ].map((r) => (
                     <div
                       key={r.k}
@@ -126,7 +127,7 @@ export const Hero = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-green-400 animate-glow-pulse" />
-                  <span className="text-xs text-[#A38F91]">Onboarding new clients</span>
+                  <span className="text-xs text-[#A38F91]">Partnering with global SIs</span>
                 </div>
               </div>
             </div>

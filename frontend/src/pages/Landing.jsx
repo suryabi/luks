@@ -5,6 +5,7 @@ import TechMarquee from "@/components/landing/TechMarquee";
 import Services from "@/components/landing/Services";
 import Industries from "@/components/landing/Industries";
 import Process from "@/components/landing/Process";
+import Engagement from "@/components/landing/Engagement";
 import Portfolio from "@/components/landing/Portfolio";
 import TeamAbout from "@/components/landing/TeamAbout";
 import Testimonials from "@/components/landing/Testimonials";
@@ -21,6 +22,7 @@ export default function Landing() {
         <Services />
         <Industries />
         <Process />
+        <Engagement />
         <Portfolio />
         <TeamAbout />
         <Testimonials />
