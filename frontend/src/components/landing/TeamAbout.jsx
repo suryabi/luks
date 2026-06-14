@@ -33,7 +33,7 @@ export const TeamAbout = () => {
                 <div className="text-xs tracking-[0.25em] uppercase text-red-300 font-semibold">
                   Established
                 </div>
-                <div className="font-display text-3xl text-white mt-1">2013</div>
+                <div className="font-display text-3xl text-white mt-1">2016</div>
               </div>
               <div className="flex -space-x-2">
                 {["#EF4444", "#F97316", "#fbbf24", "#a78bfa"].map((c, i) => (
@@ -60,7 +60,7 @@ export const TeamAbout = () => {
             <p>
               We are a global consulting and product engineering firm built on
               a simple idea: senior people, accountable to outcomes. Founded in
-              2013, we partner with ambitious organisations across finance,
+              2016, we partner with ambitious organisations across finance,
               healthcare, retail and SaaS.
             </p>
             <p>
