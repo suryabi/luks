@@ -33,37 +33,37 @@ export const Testimonials = () => {
       <div className="absolute inset-0 -z-10 radial-glow opacity-50" />
 
       <div className="max-w-5xl mx-auto text-center">
-        <div className="text-xs tracking-[0.25em] uppercase text-red-500 font-semibold">
+        <div className="text-xs tracking-[0.25em] uppercase text-[#0070F2] font-semibold">
           Voices of our clients
         </div>
-        <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tighter leading-[1.05]">
+        <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1B2A41] mt-4 tracking-tighter leading-[1.05]">
           Trusted by teams that <span className="gradient-text">ship for a living</span>.
         </h2>
 
         <div
           data-testid="testimonial-carousel"
-          className="relative mt-14 p-8 sm:p-14 rounded-3xl border border-red-500/15 bg-[#1F0B0E]/70 backdrop-blur-sm"
+          className="relative mt-14 p-8 sm:p-14 rounded-3xl border border-[#0070F2]/15 bg-[#FFFFFF]/70 backdrop-blur-sm"
         >
-          <Quote className="absolute top-6 left-6 w-10 h-10 text-red-500/30" />
+          <Quote className="absolute top-6 left-6 w-10 h-10 text-[#0070F2]/30" />
 
           <div className="flex justify-center gap-1 mb-6">
             {[...Array(5)].map((_, i) => (
               <Star
                 key={i}
-                className="w-4 h-4 fill-orange-400 text-orange-400"
+                className="w-4 h-4 fill-[#F0AB00] text-[#F0AB00]"
               />
             ))}
           </div>
 
-          <p className="font-display text-xl sm:text-2xl lg:text-3xl text-white leading-relaxed tracking-tight max-w-3xl mx-auto">
+          <p className="font-display text-xl sm:text-2xl lg:text-3xl text-[#1B2A41] leading-relaxed tracking-tight max-w-3xl mx-auto">
             “{item.q}”
           </p>
 
           <div className="mt-10">
-            <div className="font-display font-semibold text-white text-lg">
+            <div className="font-display font-semibold text-[#1B2A41] text-lg">
               {item.name}
             </div>
-            <div className="text-sm text-[#A38F91] mt-1">{item.role}</div>
+            <div className="text-sm text-[#64748B] mt-1">{item.role}</div>
           </div>
 
           <div className="flex items-center justify-center gap-3 mt-10">
@@ -71,7 +71,7 @@ export const Testimonials = () => {
               data-testid="testimonial-prev-btn"
               onClick={prev}
               aria-label="Previous testimonial"
-              className="w-11 h-11 rounded-full border border-red-500/30 flex items-center justify-center text-white hover:bg-red-500 hover:border-red-500 transition-colors"
+              className="w-11 h-11 rounded-full border border-[#0070F2]/30 flex items-center justify-center text-[#1B2A41] hover:bg-[#0070F2] hover:border-[#0070F2] transition-colors"
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
@@ -82,7 +82,7 @@ export const Testimonials = () => {
                   aria-label={`Go to testimonial ${i + 1}`}
                   onClick={() => setIdx(i)}
                   className={`h-1.5 rounded-full transition-all ${
-                    i === idx ? "w-8 bg-red-500" : "w-2 bg-red-500/30"
+                    i === idx ? "w-8 bg-[#0070F2]" : "w-2 bg-[#0070F2]/30"
                   }`}
                 />
               ))}
@@ -91,7 +91,7 @@ export const Testimonials = () => {
               data-testid="testimonial-next-btn"
               onClick={next}
               aria-label="Next testimonial"
-              className="w-11 h-11 rounded-full border border-red-500/30 flex items-center justify-center text-white hover:bg-red-500 hover:border-red-500 transition-colors"
+              className="w-11 h-11 rounded-full border border-[#0070F2]/30 flex items-center justify-center text-[#1B2A41] hover:bg-[#0070F2] hover:border-[#0070F2] transition-colors"
             >
               <ChevronRight className="w-4 h-4" />
             </button>

@@ -45,16 +45,16 @@ export const Portfolio = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div className="max-w-2xl">
-            <div className="text-xs tracking-[0.25em] uppercase text-red-500 font-semibold">
+            <div className="text-xs tracking-[0.25em] uppercase text-[#0070F2] font-semibold">
               Selected Work
             </div>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tighter leading-[1.05]">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1B2A41] mt-4 tracking-tighter leading-[1.05]">
               Outcomes we are <span className="gradient-text">proud of</span>.
             </h2>
           </div>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 text-sm text-[#C9B7B9] hover:text-white group"
+            className="inline-flex items-center gap-2 text-sm text-[#475569] hover:text-[#1B2A41] group"
             data-testid="portfolio-view-all"
           >
             Request the full case‑study deck
@@ -67,34 +67,34 @@ export const Portfolio = () => {
             <article
               key={i}
               data-testid="portfolio-item"
-              className={`group relative overflow-hidden rounded-2xl border border-red-500/15 ${c.span}`}
+              className={`group relative overflow-hidden rounded-2xl border border-[#0070F2]/15 ${c.span}`}
             >
               <img
                 src={c.img}
                 alt={c.title}
                 className="absolute inset-0 w-full h-full object-cover opacity-55 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#150708] via-[#150708]/70 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#FFFFFF] via-[#FFFFFF]/70 to-transparent" />
               <div className="relative h-full p-7 sm:p-9 flex flex-col justify-between z-10">
                 <div className="flex items-start justify-between">
-                  <span className="text-[11px] tracking-[0.2em] uppercase text-red-300 font-semibold">
+                  <span className="text-[11px] tracking-[0.2em] uppercase text-[#0070F2] font-semibold">
                     {c.tag}
                   </span>
-                  <div className="w-9 h-9 rounded-full border border-red-500/30 flex items-center justify-center group-hover:bg-red-500 group-hover:border-red-500 transition-colors">
-                    <ArrowUpRight className="w-4 h-4 text-white" />
+                  <div className="w-9 h-9 rounded-full border border-[#0070F2]/30 flex items-center justify-center group-hover:bg-[#0070F2] group-hover:border-[#0070F2] transition-colors">
+                    <ArrowUpRight className="w-4 h-4 text-[#1B2A41]" />
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-display text-2xl sm:text-3xl text-white tracking-tight leading-tight max-w-xl">
+                  <h3 className="font-display text-2xl sm:text-3xl text-[#1B2A41] tracking-tight leading-tight max-w-xl">
                     {c.title}
                   </h3>
                   <div className="mt-5 flex flex-wrap gap-x-8 gap-y-3">
                     {c.metrics.map((m) => (
                       <div key={m.k}>
-                        <div className="font-display text-2xl text-white font-semibold">
+                        <div className="font-display text-2xl text-[#1B2A41] font-semibold">
                           {m.v}
                         </div>
-                        <div className="text-xs text-[#A38F91]">{m.k}</div>
+                        <div className="text-xs text-[#64748B]">{m.k}</div>
                       </div>
                     ))}
                   </div>

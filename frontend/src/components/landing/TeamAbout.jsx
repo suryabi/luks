@@ -16,30 +16,30 @@ export const TeamAbout = () => {
     <section
       id="about"
       data-testid="team-about-section"
-      className="relative py-24 sm:py-32 px-6 sm:px-10 lg:px-12 bg-[#1A0809]"
+      className="relative py-24 sm:py-32 px-6 sm:px-10 lg:px-12 bg-[#F5F6F7]"
     >
       <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         {/* Image side */}
         <div className="lg:col-span-6 relative">
-          <div className="relative rounded-2xl overflow-hidden border border-red-500/15 aspect-[4/5] sm:aspect-[5/6] lg:aspect-[4/5] max-h-[80vh]">
+          <div className="relative rounded-2xl overflow-hidden border border-[#0070F2]/15 aspect-[4/5] sm:aspect-[5/6] lg:aspect-[4/5] max-h-[80vh]">
             <img
               src={TEAM_IMG}
               alt="Luks Solutions team at work"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#150708] via-[#150708]/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#FFFFFF] via-[#FFFFFF]/40 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between">
               <div>
-                <div className="text-xs tracking-[0.25em] uppercase text-red-300 font-semibold">
+                <div className="text-xs tracking-[0.25em] uppercase text-[#0070F2] font-semibold">
                   Established
                 </div>
-                <div className="font-display text-3xl text-white mt-1">2016</div>
+                <div className="font-display text-3xl text-[#1B2A41] mt-1">2016</div>
               </div>
               <div className="flex -space-x-2">
-                {["#EF4444", "#F97316", "#fbbf24", "#a78bfa"].map((c, i) => (
+                {["#0070F2", "#F0AB00", "#fbbf24", "#a78bfa"].map((c, i) => (
                   <div
                     key={i}
-                    className="w-9 h-9 rounded-full border-2 border-[#150708]"
+                    className="w-9 h-9 rounded-full border-2 border-[#FFFFFF]"
                     style={{ background: c }}
                   />
                 ))}
@@ -50,13 +50,13 @@ export const TeamAbout = () => {
 
         {/* Text side */}
         <div className="lg:col-span-6">
-          <div className="text-xs tracking-[0.25em] uppercase text-red-500 font-semibold">
+          <div className="text-xs tracking-[0.25em] uppercase text-[#0070F2] font-semibold">
             About Luks Solutions
           </div>
-          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tighter leading-[1.05]">
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1B2A41] mt-4 tracking-tighter leading-[1.05]">
             A senior team that <span className="gradient-text">stays in the room</span>.
           </h2>
-          <div className="space-y-5 mt-7 text-[#C9B7B9] text-lg leading-relaxed">
+          <div className="space-y-5 mt-7 text-[#475569] text-lg leading-relaxed">
             <p>
               Luks Solutions is an India-based professional consultancy
               providing solution implementation services to global SIs and
@@ -65,7 +65,7 @@ export const TeamAbout = () => {
               delivery partner.
             </p>
             <p>
-              Led by <span className="text-white font-semibold">Srirama Raju G,
+              Led by <span className="text-[#1B2A41] font-semibold">Srirama Raju G,
               Managing Partner</span> with 20 years across SAP HCM,
               SuccessFactors, SAP HANA and BW/BI — backed by 27+ certified
               consultants spanning Employee Central, PMGM, Compensation,
@@ -77,14 +77,14 @@ export const TeamAbout = () => {
             {FACTS.map((f) => (
               <div
                 key={f.l}
-                className="p-5 rounded-xl border border-red-500/12 bg-[#1F0B0E]/70"
+                className="p-5 rounded-xl border border-[#0070F2]/12 bg-[#FFFFFF]/70"
                 data-testid={`about-fact-${f.l.split(' ')[0].toLowerCase()}`}
               >
-                <f.Icon className="w-5 h-5 text-red-400 mb-3" />
-                <div className="font-display text-2xl text-white font-semibold">
+                <f.Icon className="w-5 h-5 text-[#0070F2] mb-3" />
+                <div className="font-display text-2xl text-[#1B2A41] font-semibold">
                   {f.k}
                 </div>
-                <div className="text-sm text-[#A38F91] mt-1">{f.l}</div>
+                <div className="text-sm text-[#64748B] mt-1">{f.l}</div>
               </div>
             ))}
           </div>

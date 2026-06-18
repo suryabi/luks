@@ -18,7 +18,7 @@ const MODULES = [
 ];
 
 const BG_IMG =
-  "https://images.pexels.com/photos/18618814/pexels-photo-18618814.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+  "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=srgb&fm=jpg&w=1920&q=80";
 
 export const Industries = () => {
   return (
@@ -35,17 +35,17 @@ export const Industries = () => {
           backgroundPosition: "center",
         }}
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#150708] via-[#150708]/85 to-[#150708]" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF]/85 to-[#FFFFFF]" />
 
       <div className="max-w-7xl mx-auto">
         <div className="max-w-3xl mb-16">
-          <div className="text-xs tracking-[0.25em] uppercase text-red-500 font-semibold">
+          <div className="text-xs tracking-[0.25em] uppercase text-[#0070F2] font-semibold">
             SAP SuccessFactors Product Range
           </div>
-          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tighter leading-[1.05]">
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1B2A41] mt-4 tracking-tighter leading-[1.05]">
             Ten modules. <span className="gradient-text">One delivery partner</span>.
           </h2>
-          <p className="text-lg text-[#C9B7B9] leading-relaxed mt-6">
+          <p className="text-lg text-[#475569] leading-relaxed mt-6">
             Hands-on certified expertise across the full SAP SuccessFactors
             HCM Cloud suite — from Core HR through Talent, Payroll and
             Analytics, glued together with CPI &amp; Dell Boomi integrations.
@@ -57,13 +57,13 @@ export const Industries = () => {
             <div
               key={m.name}
               data-testid="industry-card"
-              className="group relative p-5 rounded-xl border border-red-500/12 bg-[#1F0B0E]/60 backdrop-blur-sm hover:border-red-500/40 hover:bg-[#1F0B0E] transition-all duration-300"
+              className="group relative p-5 rounded-xl border border-[#0070F2]/12 bg-[#FFFFFF]/60 backdrop-blur-sm hover:border-[#0070F2]/40 hover:bg-[#FFFFFF] transition-all duration-300"
             >
-              <m.Icon className="w-6 h-6 text-red-400 mb-4 group-hover:text-orange-400 transition-colors" />
-              <h3 className="font-display text-base font-semibold text-white tracking-tight leading-snug">
+              <m.Icon className="w-6 h-6 text-[#0070F2] mb-4 group-hover:text-[#F0AB00] transition-colors" />
+              <h3 className="font-display text-base font-semibold text-[#1B2A41] tracking-tight leading-snug">
                 {m.name}
               </h3>
-              <p className="text-xs text-[#A38F91] mt-1.5 leading-relaxed">
+              <p className="text-xs text-[#64748B] mt-1.5 leading-relaxed">
                 {m.note}
               </p>
             </div>
@@ -71,16 +71,16 @@ export const Industries = () => {
         </div>
 
         {/* Integration platforms callout */}
-        <div className="mt-10 p-6 rounded-2xl border border-red-500/15 bg-[#1F0B0E]/70 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="mt-10 p-6 rounded-2xl border border-[#0070F2]/15 bg-[#FFFFFF]/70 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <div className="text-[11px] tracking-[0.25em] uppercase text-red-400 font-semibold">
+            <div className="text-[11px] tracking-[0.25em] uppercase text-[#0070F2] font-semibold">
               Integration Platforms
             </div>
-            <div className="font-display text-xl text-white mt-1 tracking-tight">
+            <div className="font-display text-xl text-[#1B2A41] mt-1 tracking-tight">
               SAP HANA Cloud Integration · Dell Boomi
             </div>
           </div>
-          <div className="text-sm text-[#A38F91] sm:text-right max-w-md">
+          <div className="text-sm text-[#64748B] sm:text-right max-w-md">
             Building, monitoring and break-fixing integrations between
             SuccessFactors and the rest of your HR &amp; finance landscape.
           </div>
