@@ -14,7 +14,7 @@ import Footer from "@/components/landing/Footer";
 
 export default function Landing() {
   return (
-    <div className="min-h-screen bg-[#150708] text-white font-body overflow-x-hidden">
+    <div className="min-h-screen bg-[#FFFFFF] text-[#1B2A41] font-body overflow-x-hidden">
       <Header />
       <main>
         <Hero />

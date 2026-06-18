@@ -86,15 +86,15 @@ export const Services = () => {
         {/* Heading */}
         <div className="grid lg:grid-cols-12 gap-8 mb-16">
           <div className="lg:col-span-5">
-            <div className="text-xs tracking-[0.25em] uppercase text-red-500 font-semibold">
+            <div className="text-xs tracking-[0.25em] uppercase text-[#0070F2] font-semibold">
               Services
             </div>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tighter leading-[1.05]">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1B2A41] mt-4 tracking-tighter leading-[1.05]">
               SAP &amp; HCM Cloud delivery, <span className="gradient-text">done right</span>.
             </h2>
           </div>
           <div className="lg:col-span-6 lg:col-start-7 flex items-end">
-            <p className="text-lg text-[#C9B7B9] leading-relaxed">
+            <p className="text-lg text-[#475569] leading-relaxed">
               Three disciplined service practices — Configuration, Integration
               and Functional — plus our own Operations Cloud product. Built on
               a Business Use Case methodology that anchors every engagement.
@@ -103,7 +103,7 @@ export const Services = () => {
         </div>
 
         {/* Grid borders layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-red-500/12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-[#0070F2]/12">
           {SERVICES.map((s, i) => {
             const Wrapper = s.href ? Link : "article";
             const wrapperProps = s.href
@@ -114,29 +114,29 @@ export const Services = () => {
                 key={s.title}
                 data-testid={`service-item-${i + 1}`}
                 {...wrapperProps}
-                className={`group relative p-8 sm:p-10 border-r border-b border-red-500/12 hover:bg-[#1F0B0E] transition-colors duration-500 block ${
+                className={`group relative p-8 sm:p-10 border-r border-b border-[#0070F2]/12 hover:bg-[#FFFFFF] transition-colors duration-500 block ${
                   s.href ? "cursor-pointer" : ""
                 }`}
               >
                 <div className="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <ArrowUpRight className="w-5 h-5 text-red-500" />
+                  <ArrowUpRight className="w-5 h-5 text-[#0070F2]" />
                 </div>
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-red-500/20 to-orange-500/10 border border-red-500/20 flex items-center justify-center mb-8">
-                  <s.Icon className="w-5 h-5 text-red-400" />
+                <div className="w-12 h-12 rounded-xl bg-[#0070F2]/10 border border-[#0070F2]/20 flex items-center justify-center mb-8">
+                  <s.Icon className="w-5 h-5 text-[#0070F2]" />
                 </div>
-                <h3 className="font-display text-2xl text-white mb-3 tracking-tight">
+                <h3 className="font-display text-2xl text-[#1B2A41] mb-3 tracking-tight">
                   {s.title}
                 </h3>
-                <p className="text-[#A38F91] leading-relaxed text-[15px]">
+                <p className="text-[#64748B] leading-relaxed text-[15px]">
                   {s.desc}
                 </p>
                 <ul className="mt-6 space-y-2">
                   {s.bullets.map((b) => (
                     <li
                       key={b}
-                      className="flex items-center gap-2 text-sm text-[#C9B7B9]"
+                      className="flex items-center gap-2 text-sm text-[#475569]"
                     >
-                      <span className="w-1 h-1 rounded-full bg-gradient-to-r from-red-500 to-orange-500" />
+                      <span className="w-1 h-1 rounded-full bg-[#0070F2]" />
                       {b}
                     </li>
                   ))}

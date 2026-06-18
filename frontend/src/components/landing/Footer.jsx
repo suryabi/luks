@@ -1,5 +1,6 @@
 import React from "react";
 import { Linkedin, Twitter, Github, Dribbble } from "lucide-react";
+import { LuksLogo } from "@/components/landing/LuksLogo";
 
 const COLUMNS = [
   {
@@ -37,32 +38,19 @@ export const Footer = () => {
   return (
     <footer
       data-testid="footer"
-      className="relative border-t border-red-500/10 bg-[#0F0506]"
+      className="relative border-t border-[#0070F2]/10 bg-[#0A2540]"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 pt-20 pb-10">
         <div className="grid lg:grid-cols-12 gap-12">
           {/* Brand */}
           <div className="lg:col-span-5">
-            <a href="#" className="flex items-center gap-3">
-              <div className="relative w-10 h-10 flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-orange-500 rounded-md rotate-45" />
-                <span className="relative font-display font-bold text-white text-lg z-10">
-                  L
-                </span>
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-display font-semibold text-white tracking-tight text-lg">
-                  LUKS
-                </span>
-                <span className="text-[10px] tracking-[0.3em] text-[#A38F91] uppercase">
-                  Solutions
-                </span>
-              </div>
+            <a href="#" className="inline-block">
+              <LuksLogo variant="light" />
             </a>
-            <p className="text-[#A38F91] leading-relaxed mt-6 max-w-md">
-              IT consulting, software services and product development for
-              ambitious organisations — delivered by a senior team that stays
-              in the room.
+            <p className="text-[#94A3B8] leading-relaxed mt-6 max-w-md">
+              India-based SAP, SuccessFactors and HCM Cloud consultancy —
+              delivering Configuration, Integration and Functional services to
+              global SIs and enterprises, plus our own Operations Cloud product.
             </p>
 
             <div className="flex items-center gap-3 mt-8">
@@ -72,7 +60,7 @@ export const Footer = () => {
                   href="#"
                   data-testid={`footer-social-${i}`}
                   aria-label="Social link"
-                  className="w-10 h-10 rounded-full border border-red-500/20 flex items-center justify-center text-[#C9B7B9] hover:text-white hover:border-red-500/60 hover:bg-red-500/10 transition-colors"
+                  className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-[#CBD5E1] hover:text-white hover:border-[#0070F2] hover:bg-[#0070F2]/15 transition-colors"
                 >
                   <Icon className="w-4 h-4" />
                 </a>
@@ -84,7 +72,7 @@ export const Footer = () => {
           <div className="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-10">
             {COLUMNS.map((col) => (
               <div key={col.title}>
-                <div className="text-xs tracking-[0.25em] uppercase text-red-500 font-semibold">
+                <div className="text-xs tracking-[0.25em] uppercase text-[#F0AB00] font-semibold">
                   {col.title}
                 </div>
                 <ul className="mt-5 space-y-3">
@@ -93,7 +81,7 @@ export const Footer = () => {
                       <a
                         href={lnk.h}
                         data-testid={lnk.t}
-                        className="text-[#C9B7B9] hover:text-white text-sm transition-colors"
+                        className="text-[#CBD5E1] hover:text-white text-sm transition-colors"
                       >
                         {lnk.l}
                       </a>
@@ -106,14 +94,14 @@ export const Footer = () => {
         </div>
 
         {/* Giant wordmark */}
-        <div className="mt-20 pt-10 border-t border-red-500/10 overflow-hidden">
-          <div className="font-display font-bold text-[18vw] sm:text-[14vw] lg:text-[180px] leading-none tracking-tighter bg-gradient-to-b from-red-500/20 to-transparent bg-clip-text text-transparent select-none">
+        <div className="mt-20 pt-10 border-t border-white/10 overflow-hidden">
+          <div className="font-display font-bold text-[18vw] sm:text-[14vw] lg:text-[180px] leading-none tracking-tighter bg-gradient-to-b from-white/20 to-transparent bg-clip-text text-transparent select-none">
             LUKS
           </div>
         </div>
 
         {/* Legal */}
-        <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-[#A38F91]">
+        <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-[#94A3B8]">
           <div>© {new Date().getFullYear()} Luks Solutions. All rights reserved.</div>
           <div className="flex items-center gap-6">
             <a href="#" data-testid="footer-link" className="hover:text-white transition-colors">

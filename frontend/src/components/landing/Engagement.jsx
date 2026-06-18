@@ -42,15 +42,15 @@ export const Engagement = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-12 gap-8 mb-14">
           <div className="lg:col-span-6">
-            <div className="text-xs tracking-[0.25em] uppercase text-red-500 font-semibold">
+            <div className="text-xs tracking-[0.25em] uppercase text-[#0070F2] font-semibold">
               Engagement Models
             </div>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 tracking-tighter leading-[1.05]">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1B2A41] mt-4 tracking-tighter leading-[1.05]">
               Four ways to <span className="gradient-text">work with us</span>.
             </h2>
           </div>
           <div className="lg:col-span-5 lg:col-start-8 flex items-end">
-            <p className="text-lg text-[#C9B7B9] leading-relaxed">
+            <p className="text-lg text-[#475569] leading-relaxed">
               Whether you need a fixed-scope module rollout, a flexible
               discovery pod, embedded consultants, or post-go-live support —
               there&apos;s a contracting model that fits.
@@ -63,32 +63,32 @@ export const Engagement = () => {
             <div
               key={m.name}
               data-testid={`engagement-card-${i + 1}`}
-              className="group relative p-8 rounded-2xl border border-red-500/15 bg-[#1F0B0E]/60 hover:border-red-500/40 hover:bg-[#1F0B0E] transition-all duration-300 overflow-hidden"
+              className="group relative p-8 rounded-2xl border border-[#0070F2]/15 bg-[#FFFFFF]/60 hover:border-[#0070F2]/40 hover:bg-[#FFFFFF] transition-all duration-300 overflow-hidden"
             >
-              <div className="absolute -top-12 -right-12 w-40 h-40 bg-gradient-to-br from-red-500/30 to-orange-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute -top-12 -right-12 w-40 h-40 bg-[#0070F2]/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative z-10 flex flex-col gap-4">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-red-500/20 to-orange-500/10 border border-red-500/20 flex items-center justify-center">
-                    <m.Icon className="w-5 h-5 text-red-400" />
+                  <div className="w-12 h-12 rounded-xl bg-[#0070F2]/10 border border-[#0070F2]/20 flex items-center justify-center">
+                    <m.Icon className="w-5 h-5 text-[#0070F2]" />
                   </div>
-                  <span className="text-[10px] tracking-[0.25em] uppercase text-[#A38F91]">
+                  <span className="text-[10px] tracking-[0.25em] uppercase text-[#64748B]">
                     Model 0{i + 1}
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-display text-2xl text-white tracking-tight">
+                  <h3 className="font-display text-2xl text-[#1B2A41] tracking-tight">
                     {m.name}
                   </h3>
-                  <div className="text-orange-300/80 text-sm mt-1">{m.tagline}</div>
+                  <div className="text-[#64748B] text-sm mt-1 font-medium">{m.tagline}</div>
                 </div>
-                <p className="text-[15px] text-[#A38F91] leading-relaxed">
+                <p className="text-[15px] text-[#64748B] leading-relaxed">
                   {m.desc}
                 </p>
-                <div className="mt-2 pt-4 border-t border-red-500/10 flex items-center gap-3">
-                  <span className="text-[10px] tracking-[0.25em] uppercase text-[#A38F91]">
+                <div className="mt-2 pt-4 border-t border-[#0070F2]/10 flex items-center gap-3">
+                  <span className="text-[10px] tracking-[0.25em] uppercase text-[#64748B]">
                     Best for
                   </span>
-                  <span className="text-sm text-white font-medium">{m.fit}</span>
+                  <span className="text-sm text-[#1B2A41] font-medium">{m.fit}</span>
                 </div>
               </div>
             </div>
