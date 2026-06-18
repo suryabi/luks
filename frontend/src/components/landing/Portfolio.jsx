@@ -10,25 +10,15 @@ const IMG_3 =
 
 const CASES = [
   {
-    tag: "Retail · SuccessFactors Full Suite",
-    title: "SAP SuccessFactors HCM transformation at Marks & Spencer UK",
-    metrics: [
-      { k: "Modules delivered", v: "8" },
-      { k: "Geographies", v: "UK + EU" },
-    ],
-    img: IMG_2,
-    span: "lg:col-span-7 lg:row-span-2",
-  },
-  {
     tag: "Strategic Partnership · Global SI",
     title: "Long-running Zalaris partnership across SF EC, PMGM, Comp, Onb & Rec",
     metrics: [{ k: "Active consultants", v: "27+" }],
     img: IMG_1,
-    span: "lg:col-span-5",
+    span: "lg:col-span-7",
   },
   {
     tag: "Multi-client · SF Rollouts",
-    title: "SuccessFactors implementations for LR, L+G, NGN & DNB",
+    title: "SuccessFactors implementations for Lloyds Register, L+G, Northern Gas Network & Dun & Bradstreet",
     metrics: [{ k: "Programmes delivered", v: "4" }],
     img: IMG_3,
     span: "lg:col-span-5",

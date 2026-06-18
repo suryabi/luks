@@ -4,7 +4,7 @@ import {
   ArrowRight, ArrowUpRight, Sparkles, Eye, Network, ShieldCheck,
   Zap, BarChart3, ChevronRight, Plug, FolderArchive, Mail, Map, Calculator,
   Briefcase, Megaphone, Factory, Truck, Wallet, LineChart, Users, Cog,
-  CheckCircle2, Layers, Globe2,
+  CheckCircle2, Layers, Globe2, LogIn,
 } from "lucide-react";
 import {
   SiZoho, SiSlack, SiGoogledrive, SiDropbox, SiGooglemaps, SiGmail,
@@ -387,6 +387,16 @@ const ProductHero = () => (
             >
               Request a Demo
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a
+              href="https://crm.luks.co.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="product-cta-login"
+              className="group inline-flex items-center gap-3 px-7 py-4 rounded-full border border-[#0070F2] bg-white text-[#0070F2] font-medium hover:bg-[#0070F2] hover:text-white transition-all"
+            >
+              <LogIn className="w-4 h-4" />
+              Login
             </a>
             <a
               href="#modules"
@@ -851,6 +861,16 @@ const ClosingCTA = () => (
         >
           Request a Demo
           <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform" />
+        </a>
+        <a
+          href="https://crm.luks.co.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="product-cta-login-final"
+          className="group inline-flex items-center gap-3 px-7 py-4 rounded-full border border-[#0070F2] bg-white text-[#0070F2] font-medium hover:bg-[#0070F2] hover:text-white transition-all"
+        >
+          <LogIn className="w-4 h-4" />
+          Customer Login
         </a>
         <Link
           to="/"
