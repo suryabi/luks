@@ -1,5 +1,6 @@
 import React from "react";
 import { Linkedin, Twitter, Github, Dribbble } from "lucide-react";
+import { LuksLogo } from "@/components/landing/LuksLogo";
 
 const COLUMNS = [
   {
@@ -43,21 +44,8 @@ export const Footer = () => {
         <div className="grid lg:grid-cols-12 gap-12">
           {/* Brand */}
           <div className="lg:col-span-5">
-            <a href="#" className="flex items-center gap-3">
-              <div className="relative w-10 h-10 flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0070F2] to-[#F0AB00] rounded-md rotate-45" />
-                <span className="relative font-display font-bold text-white text-lg z-10">
-                  L
-                </span>
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-display font-semibold text-white tracking-tight text-lg">
-                  LUKS
-                </span>
-                <span className="text-[10px] tracking-[0.3em] text-[#94A3B8] uppercase">
-                  Solutions
-                </span>
-              </div>
+            <a href="#" className="inline-block">
+              <LuksLogo variant="light" />
             </a>
             <p className="text-[#94A3B8] leading-relaxed mt-6 max-w-md">
               India-based SAP, SuccessFactors and HCM Cloud consultancy —

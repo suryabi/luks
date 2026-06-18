@@ -121,7 +121,7 @@ export const Services = () => {
                 <div className="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-opacity">
                   <ArrowUpRight className="w-5 h-5 text-[#0070F2]" />
                 </div>
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0070F2]/20 to-[#F0AB00]/10 border border-[#0070F2]/20 flex items-center justify-center mb-8">
+                <div className="w-12 h-12 rounded-xl bg-[#0070F2]/10 border border-[#0070F2]/20 flex items-center justify-center mb-8">
                   <s.Icon className="w-5 h-5 text-[#0070F2]" />
                 </div>
                 <h3 className="font-display text-2xl text-[#1B2A41] mb-3 tracking-tight">
@@ -136,7 +136,7 @@ export const Services = () => {
                       key={b}
                       className="flex items-center gap-2 text-sm text-[#475569]"
                     >
-                      <span className="w-1 h-1 rounded-full bg-gradient-to-r from-[#0070F2] to-[#F0AB00]" />
+                      <span className="w-1 h-1 rounded-full bg-[#0070F2]" />
                       {b}
                     </li>
                   ))}

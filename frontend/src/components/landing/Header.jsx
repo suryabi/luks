@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ArrowUpRight, ChevronDown, Cloud } from "lucide-react";
+import { LuksLogo } from "@/components/landing/LuksLogo";
 
 const NAV_LINKS = [
   { label: "Services", href: "/#services", testid: "nav-link-services" },
@@ -57,15 +58,8 @@ export const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 h-20 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" data-testid="header-logo" className="flex items-center gap-2 group">
-          <div className="relative w-9 h-9 flex items-center justify-center">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0070F2] to-[#F0AB00] rounded-md rotate-45 group-hover:rotate-[60deg] transition-transform duration-500" />
-            <span className="relative font-display font-bold text-white text-lg z-10">L</span>
-          </div>
-          <div className="flex flex-col leading-none">
-            <span className="font-display font-semibold text-[#1B2A41] tracking-tight">LUKS</span>
-            <span className="text-[10px] tracking-[0.25em] text-[#64748B] uppercase">Solutions</span>
-          </div>
+        <Link to="/" data-testid="header-logo" className="group">
+          <LuksLogo variant="dark" />
         </Link>
 
         {/* Desktop nav */}
@@ -110,7 +104,7 @@ export const Header = () => {
                     onClick={() => setProductsOpen(false)}
                     className="group flex items-start gap-4 p-4 rounded-xl hover:bg-[#0070F2]/10 transition-colors"
                   >
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#0070F2]/25 to-[#F0AB00]/15 border border-[#0070F2]/25 flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-[#0070F2]/10 border border-[#0070F2]/25 flex items-center justify-center shrink-0">
                       <p.Icon className="w-5 h-5 text-[#0070F2]" />
                     </div>
                     <div className="flex-1 min-w-0">
@@ -138,7 +132,7 @@ export const Header = () => {
               key={l.href}
               href={l.href}
               data-testid={l.testid}
-              className="text-sm text-[#475569] hover:text-[#1B2A41] transition-colors relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-px after:bg-gradient-to-r after:from-[#0070F2] after:to-[#F0AB00] hover:after:w-full after:transition-all after:duration-300"
+              className="text-sm text-[#475569] hover:text-[#1B2A41] transition-colors relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-px after:bg-[#0070F2] hover:after:w-full after:transition-all after:duration-300"
             >
               {l.label}
             </a>
@@ -150,7 +144,7 @@ export const Header = () => {
           <a
             href="/#contact"
             data-testid="nav-cta-contact"
-            className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#0070F2] to-[#F0AB00] text-white text-sm font-medium hover:shadow-[0_8px_30px_rgba(239,68,68,0.35)] hover:translate-y-[-1px] transition-all duration-300"
+            className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0070F2] text-white text-sm font-medium hover:shadow-[0_8px_30px_rgba(239,68,68,0.35)] hover:translate-y-[-1px] transition-all duration-300"
           >
             Get Started
             <ArrowUpRight className="w-4 h-4" />
@@ -199,7 +193,7 @@ export const Header = () => {
             <a
               href="/#contact"
               onClick={() => setMobileOpen(false)}
-              className="mt-4 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#0070F2] to-[#F0AB00] text-white text-sm font-medium w-fit"
+              className="mt-4 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#0070F2] text-white text-sm font-medium w-fit"
             >
               Get Started
               <ArrowUpRight className="w-4 h-4" />

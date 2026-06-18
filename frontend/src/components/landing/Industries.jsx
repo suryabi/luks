@@ -59,7 +59,7 @@ export const Industries = () => {
               data-testid="industry-card"
               className="group relative p-5 rounded-xl border border-[#0070F2]/12 bg-[#FFFFFF]/60 backdrop-blur-sm hover:border-[#0070F2]/40 hover:bg-[#FFFFFF] transition-all duration-300"
             >
-              <m.Icon className="w-6 h-6 text-[#0070F2] mb-4 group-hover:text-[#F0AB00] transition-colors" />
+              <m.Icon className="w-6 h-6 text-[#0070F2] mb-4 group-hover:text-[#1A5CB7] transition-colors" />
               <h3 className="font-display text-base font-semibold text-[#1B2A41] tracking-tight leading-snug">
                 {m.name}
               </h3>

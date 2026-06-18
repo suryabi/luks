@@ -63,7 +63,7 @@ export const Hero = () => {
             <a
               href="#services"
               data-testid="hero-cta-explore"
-              className="group inline-flex items-center gap-3 px-7 py-4 rounded-full bg-gradient-to-r from-[#0070F2] to-[#F0AB00] text-white font-medium hover:shadow-[0_12px_40px_rgba(239,68,68,0.4)] transition-all duration-300"
+              className="group inline-flex items-center gap-3 px-7 py-4 rounded-full bg-[#0070F2] text-white font-medium hover:shadow-[0_12px_40px_rgba(239,68,68,0.4)] transition-all duration-300"
             >
               Explore Services
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -100,7 +100,7 @@ export const Hero = () => {
         <div className="lg:col-span-4 relative hidden lg:flex justify-end">
           <div className="relative w-[360px] h-[460px]">
             <div className="absolute inset-0 rounded-2xl border border-[#0070F2]/20 bg-[#FFFFFF]/70 backdrop-blur-md p-8 overflow-hidden animate-float">
-              <div className="absolute -top-12 -right-12 w-48 h-48 bg-gradient-to-br from-[#0070F2] to-[#F0AB00] rounded-full blur-3xl opacity-40" />
+              <div className="absolute -top-12 -right-12 w-48 h-48 bg-[#0070F2] rounded-full blur-3xl opacity-40" />
               <div className="relative z-10 flex flex-col h-full justify-between">
                 <div>
                   <div className="text-xs tracking-[0.25em] uppercase text-[#0070F2] font-semibold">

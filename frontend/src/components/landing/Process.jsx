@@ -66,7 +66,7 @@ export const Process = () => {
         {/* Steps */}
         <div className="relative">
           {/* Horizontal connecting line on desktop */}
-          <div className="hidden lg:block absolute top-[68px] left-12 right-12 h-px bg-gradient-to-r from-[#0070F2]/30 via-[#F0AB00]/30 to-[#0070F2]/0" />
+          <div className="hidden lg:block absolute top-[68px] left-12 right-12 h-px bg-gradient-to-r from-[#0070F2]/40 via-[#0070F2]/20 to-[#0070F2]/0" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-y-12 gap-x-6">
             {STEPS.map((s) => (

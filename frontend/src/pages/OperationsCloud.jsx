@@ -383,7 +383,7 @@ const ProductHero = () => (
             <a
               href="/#contact"
               data-testid="product-cta-demo"
-              className="group inline-flex items-center gap-3 px-7 py-4 rounded-full bg-gradient-to-r from-[#0070F2] to-[#F0AB00] text-white font-medium hover:shadow-[0_12px_40px_rgba(239,68,68,0.4)] transition-all"
+              className="group inline-flex items-center gap-3 px-7 py-4 rounded-full bg-[#0070F2] text-white font-medium hover:shadow-[0_12px_40px_rgba(239,68,68,0.4)] transition-all"
             >
               Request a Demo
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -400,7 +400,7 @@ const ProductHero = () => (
 
         <div className="lg:col-span-4">
           <div className="relative rounded-2xl border border-[#0070F2]/20 bg-[#FFFFFF]/70 backdrop-blur-md p-7 overflow-hidden">
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-[#0070F2] to-[#F0AB00] rounded-full blur-3xl opacity-40" />
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#0070F2] rounded-full blur-3xl opacity-40" />
             <div className="relative z-10 space-y-5">
               <div className="text-xs tracking-[0.25em] uppercase text-[#0070F2] font-semibold">
                 Built for
@@ -468,7 +468,7 @@ const WhyChoose = () => (
               i === 4 ? "md:col-span-2 lg:col-span-1" : ""
             }`}
           >
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#0070F2]/20 to-[#F0AB00]/10 border border-[#0070F2]/20 flex items-center justify-center mb-5">
+            <div className="w-11 h-11 rounded-xl bg-[#0070F2]/10 border border-[#0070F2]/20 flex items-center justify-center mb-5">
               <w.Icon className="w-5 h-5 text-[#0070F2]" />
             </div>
             <h3 className="font-display text-xl text-[#1B2A41] tracking-tight">{w.title}</h3>
@@ -532,7 +532,7 @@ const ModuleNav = ({ modules, active, onSelect }) => (
           <div
             className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${
               isActive
-                ? "bg-gradient-to-br from-[#0070F2] to-[#F0AB00] text-white"
+                ? "bg-[#0070F2] text-white"
                 : "bg-[#0070F2]/10 text-[#0070F2]"
             }`}
           >
@@ -563,7 +563,7 @@ const ModulePanel = ({ module: m }) => (
     className="relative p-7 sm:p-10 rounded-3xl border border-[#0070F2]/15 bg-[#FFFFFF]/60 backdrop-blur-sm"
   >
     <div className="flex items-start gap-5 mb-8">
-      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0070F2] to-[#F0AB00] flex items-center justify-center shrink-0">
+      <div className="w-14 h-14 rounded-2xl bg-[#0070F2] flex items-center justify-center shrink-0">
         <m.Icon className="w-6 h-6 text-[#1B2A41]" />
       </div>
       <div className="min-w-0">
@@ -591,7 +591,7 @@ const ModulePanel = ({ module: m }) => (
                 key={it}
                 className="flex items-start gap-3 text-[15px] text-[#475569] leading-relaxed"
               >
-                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#0070F2] to-[#F0AB00] shrink-0" />
+                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#0070F2] shrink-0" />
                 {it}
               </li>
             ))}
@@ -707,7 +707,7 @@ const Integrations = () => {
               data-testid={`integration-featured-${f.name.toLowerCase().replace(/\s+/g, '-')}`}
               className="group relative p-7 rounded-2xl border border-[#0070F2]/15 bg-[#FFFFFF]/70 hover:border-[#0070F2]/40 hover:bg-[#FFFFFF] transition-all duration-300 overflow-hidden"
             >
-              <div className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-[#0070F2]/30 to-[#F0AB00]/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#0070F2]/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10">
                 <div className="flex items-center justify-between mb-5">
                   <div className="w-12 h-12 rounded-xl bg-[#FFFFFF] border border-[#0070F2]/20 flex items-center justify-center">
@@ -847,7 +847,7 @@ const ClosingCTA = () => (
         <a
           href="/#contact"
           data-testid="product-cta-final"
-          className="group inline-flex items-center gap-3 px-7 py-4 rounded-full bg-gradient-to-r from-[#0070F2] to-[#F0AB00] text-white font-medium hover:shadow-[0_12px_40px_rgba(239,68,68,0.4)] transition-all"
+          className="group inline-flex items-center gap-3 px-7 py-4 rounded-full bg-[#0070F2] text-white font-medium hover:shadow-[0_12px_40px_rgba(239,68,68,0.4)] transition-all"
         >
           Request a Demo
           <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform" />

@@ -148,7 +148,7 @@ export const Contact = () => {
               <button
                 type="submit"
                 data-testid="contact-submit"
-                className="group inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-gradient-to-r from-[#0070F2] to-[#F0AB00] text-white font-medium hover:shadow-[0_12px_40px_rgba(239,68,68,0.4)] transition-all"
+                className="group inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-[#0070F2] text-white font-medium hover:shadow-[0_12px_40px_rgba(239,68,68,0.4)] transition-all"
               >
                 {submitted ? (
                   <>

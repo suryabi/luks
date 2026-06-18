@@ -65,10 +65,10 @@ export const Engagement = () => {
               data-testid={`engagement-card-${i + 1}`}
               className="group relative p-8 rounded-2xl border border-[#0070F2]/15 bg-[#FFFFFF]/60 hover:border-[#0070F2]/40 hover:bg-[#FFFFFF] transition-all duration-300 overflow-hidden"
             >
-              <div className="absolute -top-12 -right-12 w-40 h-40 bg-gradient-to-br from-[#0070F2]/30 to-[#F0AB00]/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute -top-12 -right-12 w-40 h-40 bg-[#0070F2]/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative z-10 flex flex-col gap-4">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0070F2]/20 to-[#F0AB00]/10 border border-[#0070F2]/20 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-[#0070F2]/10 border border-[#0070F2]/20 flex items-center justify-center">
                     <m.Icon className="w-5 h-5 text-[#0070F2]" />
                   </div>
                   <span className="text-[10px] tracking-[0.25em] uppercase text-[#64748B]">
